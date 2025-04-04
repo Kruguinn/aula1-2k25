@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Açaí Vila Velha</title>
+  <link rel="stylesheet" href="acai.css" />
+</head>
+<body>
+  <!-- Splash Screen -->
+  <section id="splash" class="screen">
+    <img src="logo.png" alt="Logo Açaí Vila Velha" class="logo" />
+    <h1 class="title">Açaí Vila Velha</h1>
+  </section>
+
+  <!-- Login Screen -->
+  <section id="login" class="screen hidden">
+    <h2 class="title">Entrar</h2>
+    <input type="email" placeholder="Email" class="input" />
+    <input type="password" placeholder="Senha" class="input" />
+    <button class="btn" onclick="goToHome()">Login</button>
+    <p class="info">Ou entre com Google ou Facebook</p>
+  </section>
+
+  <!-- Home Screen -->
+  <section id="home" class="screen hidden">
+    <h2 class="title">Bem-vindo ao Açaí Vila Velha!</h2>
+    <button class="btn" onclick="goToMontagem()">Monte seu Açaí</button>
+    <button class="btn">Sugestões Especiais</button>
+  </section>
+
+  <!-- Tela de Montagem do Açaí -->
+  <section id="montagem" class="screen hidden">
+    <h2 class="title">Monte seu Açaí</h2>
+
+    <label for="tamanho">Tamanho:</label>
+    <select id="tamanho" class="input">
+      <option>300ml</option>
+      <option>500ml</option>
+      <option>700ml</option>
+      <option>1L</option>
+    </select>
+
+    <label for="base">Base:</label>
+    <select id="base" class="input">
+      <option>Açaí Tradicional</option>
+      <option>Açaí Zero Açúcar</option>
+      <option>Açaí Proteico</option>
+    </select>
+
+    <label>Acompanhamentos (até 3):</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" /> Banana</label>
+      <label><input type="checkbox" /> Morango</label>
+      <label><input type="checkbox" /> Leite Condensado</label>
+      <label><input type="checkbox" /> Leite em Pó</label>
+      <label><input type="checkbox" /> Paçoca</label>
+    </div>
+
+    <label for="topping">Topping Especial:</label>
+    <select id="topping" class="input">
+      <option>Granola</option>
+      <option>Castanha</option>
+      <option>Mel</option>
+      <option>Sem topping</option>
+    </select>
+
+    <button class="btn">Adicionar ao Carrinho</button>
+  </section>
+
+  <script src="acai.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Açaí Vila Velha</title>
+  <link rel="stylesheet" href="acai.css" />
+</head>
+<body>
+  <!-- Splash Screen -->
+  <section id="splash" class="screen">
+    <img src="logo.png" alt="Logo Açaí Vila Velha" class="logo" />
+    <h1 class="title">Açaí Vila Velha</h1>
+  </section>
+
+  <!-- Login Screen -->
+  <section id="login" class="screen hidden">
+    <h2 class="title">Entrar</h2>
+    <input type="email" placeholder="Email" class="input" />
+    <input type="password" placeholder="Senha" class="input" />
+    <button class="btn" onclick="goToHome()">Login</button>
+    <p class="info">Ou entre com Google ou Facebook</p>
+  </section>
+
+  <!-- Home Screen -->
+  <section id="home" class="screen hidden">
+    <h2 class="title">Bem-vindo ao Açaí Vila Velha!</h2>
+    <button class="btn">Monte seu Açaí</button>
+    <button class="btn">Sugestões Especiais</button>
+  </section>
+
+  <script src="acai.js"></script>
+</body>
+</html>
