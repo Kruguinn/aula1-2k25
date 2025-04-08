@@ -1,71 +1,73 @@
 // OBJETOS //
 let times=[
     {
-        nome: "Magnus Futsal"
-        goleiro: "Leandro Filho"
-        AláDireita: "Leandro Lino"
-        AláEsquerdo: "Dieguinho"
-        pivô: "Leozin"
-        fixo: "Rodrigo Capita"
-        técnico: "Ricardinho"
-        vitórias: 1
-        derrotas: 0
-    }
-];
+        nome: "Magnus Futsal",
+        goleiro: "Leandro Filho",
+        AlaDireita: "Leandro Lino",
+        AlaEsquerdo: "Dieguinho",
+        pivo: "Leozin",
+        fixo: "Rodrigo Capita",
+        tecnico: "Ricardinho",
+        vitorias: 1,
+        derrotas: 0,
+    },
 
-[
+
     {
-        nome: "Seleção Brasileira"
-        goleiro: "Willian"
-        AláDireita: "Leandro Lino"
-        AláEsquerdo: "Arthur"
-        pivô: "Pito"
-        fixo: "Neguinho"
-        técnico: "Marquinhos Xavier"
-        vitórias: 7
-        derrotas: 0
-    }
-];
+        nome: "Seleção Brasileira",
+        goleiro: "Willian",
+        AlaDireita: "Leandro Lino",
+        AlaEsquerdo: "Arthur",
+        pivo: "Pito",
+        fixo: "Neguinho",
+        tecnico: "Marquinhos Xavier",
+        vitorias: 7,
+        derrotas: 0,
+    },
 
-[
+
     {
-        nome: "Pato Futsal"
-        goleiro: "Djony"
-        AláDireita: "Ian"
-        AláEsquerdo: "Duduzinho"
-        pivô: "Ton"
-        fixo: "Gleidson"
-        técnico: "Betinho"
-        vitórias: 0
-        derrotas: 0
-    }
-];
+        nome: "Pato Futsal",
+        goleiro: "Djony",
+        AlaDireita: "Ian",
+        AlaEsquerdo: "Duduzinho",
+        pivo: "Ton",
+        fixo: "Gleidson",
+        tecnico: "Betinho",
+        vitorias: 0,
+        derrotas: 0,
+    },
 
-[
+
     {
-        nome: "Marreco"
-        goleiro: "Juba"
-        AláDireita: "Canhoto"
-        AláEsquerdo: "Ligeiro"
-        pivô: "Fabinho"
-        fixo: "Nascimento"
-        técnico: "Banana"
-        vitórias: 0
-        derrotas: 0
-    }
-];
+        nome: "Marreco",
+        goleiro: "Juba",
+        AlaDireita: "Canhoto",
+        AlaEsquerdo: "Ligeiro",
+        pivo: "Fabinho",
+        fixo: "Nascimento",
+        tecnico: "Banana",
+        vitorias: 0,
+        derrotas: 0,
+    },
 
-[
+
     {
-        nome: "Atlântico"
-        goleiro: "Ryn"
-        AláDireita: "PL"
-        AláEsquerdo: "Salah"
-        pivô: "Elenilson"
-        fixo: "Erick"
-        técnico: "Paulinho Sananduva"
-        vitórias: 0
-        derrotas: 0
+        nome: "Atlântico",
+        goleiro: "Ryn",
+        AlaDireita: "PL",
+        AlaEsquerdo: "Salah",
+        pivo: "Elenilson",
+        fixo: "Erick",
+        tecnico: "Paulinho Sananduva",
+        vitorias: 0,
+        derrotas: 0,
     }
 ];
 
+function verTimes(){
+    times.forEach((time)=>{
+        console.log (time.nome + "-" + time.goleiro + "(goleiro), " + time.AlaDireito + "(Alá Direito), " + time.AlaEsquerda + "(Alá Esquerda), " + time.fixo + "(fixo), " + time.pivo + "(Pivô), " + time.tecnico + "(Técnico)", + time.vitorias + "(Vitórias), " + time.derrotas + "(Derrotas). ")
+    });
+}
+verTimes();
